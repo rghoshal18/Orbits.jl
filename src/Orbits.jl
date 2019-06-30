@@ -1,7 +1,8 @@
 module Orbits
 
 export iers2010,cal2mjd,kepler2cart,kepler,rot
-export satclass,gcrs2itrf,j2secularorbit,getrotmat
+export gcrs2itrf,j2secularorbit,getrotmat
+export kepler_elements,secular_kepler_elements,state_vector
 
 include("iers2010.jl")
 include("cal2mjd.jl")
