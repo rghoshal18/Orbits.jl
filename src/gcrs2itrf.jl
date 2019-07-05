@@ -80,5 +80,5 @@ function gcrs2itrf(input,t,tscale;rot=nothing)
     obj.x_dot = outvel[:,1]
     obj.y_dot = outvel[:,2]
     obj.z_dot = outvel[:,3]
-    return obj,Rmat
+    return obj,Rmat,dR
 end
