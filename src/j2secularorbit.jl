@@ -1,3 +1,38 @@
+"""
+    j2secularorbit(in_put, t0 = nothing, duration = nothing, step_size = nothing,ae = nothing)
+J2SECULARORBIT computes the orbit of a satellite that is perturbed
+only by the effect of the earth's flattening.
+
+(t, out_put) = j2secularorbit(in_put, t0, duration, step_size,ae)
+
+INPUT\n
+`in_put`    - A structure variable containing the Kepler elements of the
+            satellite orbit. The accepted fieldnames are
+              a   - semi-major axis of the orbit from the surface of
+                    the Earth                                 [m]
+              ecc - Eccentricity
+              inc - Inclination                               [radian]
+              omper - Argument of perigee                     [radian]
+              omasc - Right ascension of the ascending node   [radian]
+              meananomaly - Mean anomaly                      [radian]
+
+`t0`        - Initial epoch of the satellite given as Modified Julian
+             day                                              [days]
+            This is an optional argument. Default value is 51544,
+            which is 1 January 2000.
+\n`duration`  - Duration for which the orbit has to be computed   [days]
+            This is an optional argument. Default value is 1 day.
+\n`step_size` - The along-track sampling distance                 [seconds]
+            This is an optional argument. Default value is 10 seconds.
+\n`ae`        - The value of earth radius at the equator.
+
+OUTPUT
+\n`t`         - Time of each epoch of the satellite orbit given in
+            Modified Julian Days                              [days]
+\n`out_put`   - A structure variable containing the Kepler elements of the
+            satellite orbit for the entire duration.
+
+"""
 function j2secularorbit(in_put, t0 = nothing, duration = nothing, step_size = nothing,ae = nothing)
     if in_put==nothing
         error("No Input detected")

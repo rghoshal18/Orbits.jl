@@ -1,3 +1,35 @@
+"""
+    kepler2cart(input,tag,GM)
+
+`kepler2cart` transforms Keplerian elements into Cartesian positions and
+velocities in the inertial frame.
+Elements might be time dependent to describe an osculating orbit.
+Usually at least the time information (time or anomaly) should be a vector.
+
+IN:
+`input`   An object of structure `secular_kepler_elements`
+`tag`     String-tag: `time`, `true` (default), `mean` or `eccentric`
+`GM`      Gravitational constant times mass of the body (Earth)
+
+OUT:
+`obj`    An object of structure `state_vector` that contains `cartesian position vector`
+         and `cartesian velocity vector` and the reference frame as `gcrs`
+
+See also: `kepler`,`secular_kepler_elements`,`state_vector`
+
+Sub-routines:
+*   gravitational_constants
+*   kepler
+*   rot
+
+REMARKS:
+*   fully vectorized, i.e. all Keplerian elements might be time-series
+*   any anomaly or time can be used for time information, where the
+    selection is achieved by the argument TAG
+*   By introducing OMASC-THETA a simplified representation in the
+    Earth-fixed frame is possible
+
+"""
 function kepler2cart(input,tag = nothing,GM = nothing)
     if input==nothing
         error("Input detected is not valid")

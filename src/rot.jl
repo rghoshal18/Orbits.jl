@@ -1,3 +1,19 @@
+"""
+    rot(xin,dxin,alfa,i=nothing)
+
+ROT  performs 3D rotations
+
+    INPUT
+    \n`xin`   - input coordinates  Nx3 or 3xN matrix
+    \n`dxin`  - variances of input coordinates
+    \n`alfa`  - rotation angle [degree]	vector
+    \n`i`     - rotation axis 		scalar
+
+    OUT
+    \n`xout`  - output coordinates 	Nx3 or 3xN matrix
+    \n`dxout` - variances of output coordinates
+
+"""
 function rot(xin,dxin,alfa,i=nothing)
     if i == nothing
         i = alfa

@@ -1,5 +1,18 @@
-function cal2mjd(Y = nothing, M = nothing, D = nothing, h = nothing, m = nothing, s = nothing)
+"""
+    cal2mjd(Y = nothing, M = nothing, D = nothing, h = nothing, m = nothing, s = nothing)
+`CAL2MJD` converts a calendar date to a modified Julian date
+\n
+INPUT
+\n
+`Y,M,D,[h,m,s]` - Year, month, day, hour, minutes, seconds [n x 1]
+                All the inputs must be of the same size. The
+                variables in the brackets are optional.
 
+OUTPUT
+\n
+`mjd` - Modified Julian Date
+"""
+function cal2mjd(Y = nothing, M = nothing, D = nothing, h = nothing, m = nothing, s = nothing)
     if (Y == nothing || M == nothing || D == nothing)
         error("Insufficient input arguments")
     elseif h == nothing

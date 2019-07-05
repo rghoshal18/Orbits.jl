@@ -1,3 +1,37 @@
+"""
+    gcrs2itrf(input,t,tscale;rot=nothing)
+`GCRS2ITRF` rotates a position vector from an earth-centered inertial frame
+(GCRS) to an earth-fixed-earth-centered frame (ITRF).
+
+INPUT
+\n
+`t`      - Time in seconds past J2000, either as a scalar or a vector
+         If a vector is provided it must have the same length as the
+         position vectors.             [units: s]     [1 x 1]/[n x 1]
+\n
+`tscale` - Time scale. Valid values are
+          'TAI'
+          'GPS'
+
+Optional arguments
+\n
+`rot` - String tag to specify the type of rotation. Valid values are
+          'zrot' - Rotation along the pole using the constant earth
+                   rotation rate.                            [default]
+          'ERA'  - Rotation only along the z-axis using Earth rotation
+                   angle.
+          'GAST' - Rotation only along the z-axis using GAST
+          'full' - Includes Precession, Nutation, Polar motion and
+                   Earth rotation.
+
+OUTPUT
+\n
+`state_vector_itrf`  - A Structure containing state vector in the ITRF.
+\n
+`Rmat`  - Rotation matrices for all the time points
+        The nine columns are arranged in the following order
+        Rmat(1,1) Rmat(1,2) Rmat(1,3) Rmat(2,1) Rmat(2,2)...Rmat(3,3)
+"""
 function gcrs2itrf(input,t,tscale;rot=nothing)
     pos = [input.x input.y input.z]
     vel = [input.x_dot input.y_dot input.z_dot]
@@ -46,5 +80,5 @@ function gcrs2itrf(input,t,tscale;rot=nothing)
     obj.x_dot = outvel[:,1]
     obj.y_dot = outvel[:,2]
     obj.z_dot = outvel[:,3]
-    return obj,Rmat,dR
+    return obj,Rmat
 end

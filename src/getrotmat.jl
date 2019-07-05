@@ -1,3 +1,17 @@
+"""
+    getrotmat(theta)
+GETROTMAT gives us the rotation matrix for the input angles for rotation around
+    z-axis.
+
+INPUT
+\n
+`theta` : It contains list of angles in degrees.
+\n
+OUTPUT
+\n
+`(Rmat,dR)` : Rmat : a matrix of n * 9 elements where each row is the
+                    rotation matrix for corresponding theta angle.
+"""
 function getrotmat(theta)
     omega = iers2010("earth_rotation_rate")[1]
     if length(theta) ==1
