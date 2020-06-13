@@ -1,6 +1,7 @@
-# Project Title
+# Orbit.jl
 
-One Paragraph of project description goes here
+This is a package which can be used for doing basic simulation of orbital parameters. It was a part of
+my summer project in year 2019.
 
 ## Getting Started
 
@@ -72,16 +73,15 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Rajat Ghoshal** - *Initial work* - [rghoshal18](https://github.com/rghoshal18)
+* **Prince Kumar** - *Initial work*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is open source.
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+I did this project under the guidance of Prof. Balaji Devaraju, Department of Civil Engineering, IIT Kanpur.
