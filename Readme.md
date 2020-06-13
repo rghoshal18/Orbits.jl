@@ -1,14 +1,14 @@
 # Orbit.jl
 
 This is a package which can be used for doing basic simulation of orbital parameters. It was a part of
-my summer project in year 2019.
+my summer project in the year 2019.
 
 ## Getting Started
 
 Before starting to use this tool, you need to have some knowledge of:
 
 ```
-Keplerian Elements
+[Keplerian Elements](https://www.tutorialspoint.com/satellite_communication/satellite_communication_orbital_mechanics.htm)
 Coordinate Systems like GCRS, ITRF etc.
 Julian Date
 IERS Convention
