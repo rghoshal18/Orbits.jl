@@ -27,18 +27,12 @@ julia (minimum 1.1.1)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+To start using this package:
 
-Say what the step will be
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```julia
+using Pkg;
+Pkg.add("https://github.com//rghoshal18//Orbits.jl);
 ```
 
 An example.jl is there for a liitle demo of the functions in this package.
