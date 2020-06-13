@@ -29,6 +29,10 @@ sudo cp -r julia-1.4.2 /opt/
 sudo ln -s /opt/julia-1.4.2/bin/julia /usr/local/bin/julia
 ```
 
+#### On Windows
+
+Install using .exe windows installation file from [here](https://julialang.org/downloads/).
+
 ### Installing
 
 To start using this package:
