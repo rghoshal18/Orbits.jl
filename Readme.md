@@ -18,11 +18,15 @@ and basic coordinate geometry concepts.
 
 ### Prerequisites
 
-You need to have :
+You need to have julia( min 1.1.1) installed in your system for using this package.
 
-```
-julia (minimum 1.1.1)
-
+#### On Linux
+```bash
+cd ~/Downloads
+wget https://julialang-s3.julialang.org/bin/linux/x64/1.4/julia-1.4.2-linux-x86_64.tar.gz
+tar -xvzf julia-1.4.2-linux-x86_64.tar.gz
+sudo cp -r julia-1.4.2 /opt/
+sudo ln -s /opt/julia-1.4.2/bin/julia /usr/local/bin/julia
 ```
 
 ### Installing
@@ -40,8 +44,8 @@ An example.jl is there for a liitle demo of the functions in this package.
 
 ## Authors
 
-* **Rajat Ghoshal** - *Initial work* - [rghoshal18](https://github.com/rghoshal18)
-* **Prince Kumar** - *Initial work*
+* **Rajat Ghoshal** - [rghoshal18](https://github.com/rghoshal18)
+* **Prince Kumar**
 
 
 ## License
