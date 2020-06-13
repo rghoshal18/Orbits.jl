@@ -1,7 +1,9 @@
 # Orbits.jl
 
-This is a package which can be used for doing basic simulation of orbital parameters. It was a part of
-my summer project in the year 2019.
+This is a package which can be used for doing basic simulation of orbital parameters.
+It was a part of my summer project in the year 2019 under the guidance of Prof. Balaji Devaraju,
+Department of Civil Engineering, IIT Kanpur.
+
 
 ## Getting Started
 
@@ -52,4 +54,3 @@ This project is open source.
 
 ## Acknowledgments
 
-I did this project under the guidance of Prof. Balaji Devaraju, Department of Civil Engineering, IIT Kanpur.
