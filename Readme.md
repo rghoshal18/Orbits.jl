@@ -18,7 +18,7 @@ and basic coordinate geometry concepts.
 
 ### Prerequisites
 
-You need to have julia( min 1.1.1) installed in your system for using this package.
+You need to have julia (min 1.1.1) installed in your system for using this package.
 
 #### On Linux
 ```bash
@@ -31,7 +31,7 @@ sudo ln -s /opt/julia-1.4.2/bin/julia /usr/local/bin/julia
 
 #### On Windows
 
-Install using .exe windows installation file from [here](https://julialang.org/downloads/).
+Install julia using windows executable file from [here](https://julialang.org/downloads/).
 
 ### Installing
 
