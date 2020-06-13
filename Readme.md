@@ -32,7 +32,8 @@ To start using this package:
 
 ```julia
 using Pkg;
-Pkg.add("https://github.com//rghoshal18//Orbits.jl);
+Pkg.add(PackageSpec(url="https://github.com/rghoshal18/Orbits.jl"))
+using Orbits
 ```
 
 An example.jl is there for a liitle demo of the functions in this package.
