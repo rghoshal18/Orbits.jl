@@ -41,7 +41,7 @@ And repeat
 until finished
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+An example.jl is there for a liitle demo of the functions in this package.
 
 ## Authors
 
