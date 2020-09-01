@@ -55,6 +55,3 @@ An example.jl is there for a liitle demo of the functions in this package.
 ## License
 
 This project is open source.
-
-## Acknowledgments
-
